@@ -25,6 +25,11 @@ module.exports = {
     resolve: {
         extensions: [".js", ".ts", ".tsx"]
     },
+    optimization: {
+        splitChunks: {
+            chunks: "all"
+        }
+    },
     plugins: [
         new HtmlWebpackPlugin({
             title: "Webpack Boilerplate",
